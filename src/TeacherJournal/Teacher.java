@@ -18,23 +18,24 @@ public class Teacher {
             int data2 = scanner.nextInt();
             number.add(data2);
         }
-        System.out.println("Введите two или exc \n чтобы вывести двоешников или отличников  соответственно");
+        System.out.println("Введите <<двоешники>>(2) или <<отличники>>(5) либо <<журнал>>(0)");
         String menu = scanner.next();
-        for (int j = 0; j < data1; j++) {
-            System.out.println(people.get(j) + " - " + number.get(j));
-        }
-        if (menu.equals("exc")) {
+        if (menu.equals("журнал")|| menu.equals("0"))
+            for (int j = 0; j < data1; j++) {
+                System.out.println(people.get(j) + " - " + number.get(j));
+            }
+        if (menu.equals("двоешники") || menu.equals("2")) {
             for (int i : number
             ) {
-                if (i == 5) {
+                if (i == 2) {
                     System.out.println(people.get(k) + " - " + i);
                 }
                 k++;
             }
-            if (menu.equals("two")) {
+            if (menu.equals("отличники") || menu.equals("5")) {
                 for (int i : number
                 ) {
-                    if (i == 2) {
+                    if (i == 5) {
                         System.out.println(people.get(k) + " - " + i);
                     }
                     k++;

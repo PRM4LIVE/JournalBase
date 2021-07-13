@@ -33,14 +33,16 @@ public class Teacher {
                 k++;
             }
             if (menu.equals("отличники") || menu.equals("5")) {
-                for (int i : number
+                /*for (int i : number
                 ) {
                     if (i == 5) {
                         System.out.println(people.get(k) + " - " + i);
                     }
                     k++;
-                }
+                }*/
+
             }
+            else System.out.println("Введены не корректные данные");
         }
     }
 }

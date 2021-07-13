@@ -1,18 +1,21 @@
 package TeacherJournal;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.w3c.dom.ls.LSOutput;
 
-public class Journal {
-    public static void excellent(ArrayList<Integer> number) {
+import java.util.ArrayList;
+
+public class Journal extends Teacher{
+    public void excellent (ArrayList<Integer> number, ArrayList<String> people) {
         int k = 0;
-        List<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         for (int i : number
         ) {
             if (i == 5) {
-                list.add(number.get(k));
+                System.out.println(people.get(k) + " - " + number.get(k));
             }
             k++;
+
         }
+        return;
     }
 }
